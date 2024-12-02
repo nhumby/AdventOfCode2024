@@ -1,10 +1,10 @@
-﻿using System;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace AdventOfCodeDay1
+namespace AdventOfCodeDay2
 {
     internal class PuzzleInputFetcher
     {
@@ -23,7 +23,7 @@ namespace AdventOfCodeDay1
 
             try
             {
-                var result = await sharedClient.GetAsync("/2024/day/1/input");
+                var result = await sharedClient.GetAsync("/2024/day/2/input");
                 result.EnsureSuccessStatusCode();
                 return await result.Content.ReadAsStringAsync();
             }

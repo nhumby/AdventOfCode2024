@@ -1,3 +1,5 @@
 ﻿using AdventOfCodeDay1;
 
-Console.WriteLine(new PuzzleSolver().Solve(await new PuzzleInputFetcher().FetchInput()));
+var puzzleSolver = new PuzzleSolver(await new PuzzleInputFetcher().FetchInput());
+Console.WriteLine(puzzleSolver.SolvePart1());
+Console.WriteLine(puzzleSolver.SolvePart2());
